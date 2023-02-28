@@ -1,0 +1,117 @@
+
+
+.nav{
+    columns: 8 320px;
+    column-gap: 0.5em;
+    display: flex 100%;
+    justify-content: space-around;  
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr ;
+    gap: 2em; */
+    justify-items: center; 
+}
+.logo{
+    content: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0%;
+    margin-left: 0%;
+    border-left: 0%;
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+.menu{
+     display: flex; 
+     justify-content: space-evenly; 
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+}
+.inicio:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.hoy:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.crear:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.inicio{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1em;
+}
+
+.hoy{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.crear{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+/* .buscador{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+} */
+.buscar:hover{
+    transform: scale(1.2);
+}
+.usuario{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.noti:hover{
+    transform: scale(1.2);
+}
+.mens:hover{
+    transform: scale(1.2);
+}
+.usua:hover{
+    transform: scale(1.2);
+}
+.articulo{
+    margin: 1em;
+}
+.galeria{
+    max-width: 100%;
+    display: inline-block;
+    transform: scale(1);
+}
+img:hover{
+    opacity: 70%;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+img{
+    border-radius: 20px;
+    max-width: 100%;
+    margin-bottom: 1em;
+    display: inline-block;
+    content: 1em;
+}
+.galeria{
+    columns: 4 320px;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+@media screen and (max-width: 768px) and (min-width: 320px){
+    .galeria{
+        columns: 1 320px;
+        column-gap: 1em;
+        row-gap: 1em;
+    }
+    .nav{
+    columns: 4 120px;
+    column-gap: 0.5em;
+    display: flex 100%;
+    justify-content: space-around;
+    justify-items: center;
+    }
+}
